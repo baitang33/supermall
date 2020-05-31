@@ -17,19 +17,19 @@
 	export default {
 		name: "Swiper",
     props: {
-      interval: {
+      interval:{
 		    type: Number,
         default: 3000
       },
-      animDuration: {
+      animDuration:{
 		    type: Number,
         default: 300
       },
-      moveRatio: {
+      moveRatio:{
         type: Number,
         default: 0.25
       },
-      showIndicator: {
+      showIndicator:{
         type: Boolean,
         default: true
       }
