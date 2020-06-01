@@ -2,7 +2,7 @@
   <swiper>
     <swiper-item v-for="item in banners" :key="item.title+item.image">
       <a :href="item.link">
-        <img :src="item.image" alt="">
+        <img :src="item.image" alt="" @load="imageOnload"/>
       </a>
     </swiper-item>
   </swiper>
@@ -21,10 +21,23 @@
         }
       }
     },
+    data(){
+			return{
+				isLoad:false
+			}
+		},
     components: {
     Swiper,
     SwiperItem
-    }
+    },
+    methods:{
+			imageOnload(){
+				//console.log("0000")
+				if(this.isLoad) return
+				this.isLoad=!this.isLoad
+				this.$emit('imgTabOffsetTop')
+			}
+		}
   }
 </script>
 

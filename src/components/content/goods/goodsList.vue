@@ -1,6 +1,6 @@
 <template>
 	<div class="goods">
-		<goods-list-item v-for="(item,index) in goods" :key="currentType+item.name+item.image+index" :goodsItem="item" />
+		<goods-list-item v-for="(item,index) in goods" :key="pathTo+currentType+item.name+item.image+index" :goodsItem="item" />
 	</div>
 </template>
 
@@ -16,6 +16,12 @@
 				}
 			},
 			currentType:{
+				type:String,
+				default(){
+					return ''
+				}
+			},
+			pathTo:{
 				type:String,
 				default(){
 					return ''

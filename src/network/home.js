@@ -14,7 +14,7 @@ export function getHomeGoods(type, page) {
   })
 }
 export function getGoods(page){
-	//console.log("getGoods page",`/json/goods${page}.json`)
+	console.log("getGoods page",`/json/goods${page}.json`)
 	return requestGoods({
 		url:`/json/goods${page}.json`
 	})

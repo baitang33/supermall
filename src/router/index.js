@@ -5,6 +5,7 @@ const Home = () => import('../pages/home/home.vue')
 const Category = () => import('../pages/category/category')
 const Cart = () => import('../pages/cart/cart')
 const Profile = () => import('../pages/profile/profile')
+const Detail = () => import('../pages/detail/detail')
 const routes=[
 	{
     path: '',
@@ -37,6 +38,10 @@ const routes=[
 			title:'分类'
 		},
 		component:Category
+	},
+	{
+		path:'/detail',
+		component:Detail
 	}
 ]
 const router=new Router({

@@ -28,31 +28,43 @@
 			}
 		},
 		mounted(){
-			console.log('this.probeType',this.probeType,this.pullUpLoad)
+			//console.log('this.probeType',this.probeType,this.pullUpLoad)
 			this.scroll=new BScroll(this.$refs.wrapper,{
 				click:true,
 				pullUpLoad:this.pullUpLoad,
 				probeType:this.probeType
 			});
-			this.scroll.on('scroll',this.Onscroll)
-			this.scroll.on('pullingUp',()=>{
-				setTimeout(()=>{
-					this.$emit('pullMore')
-					console.log("上拉加载完成!")
-				},1000)
-			})
-			//this.scroll.scrollTo(x,y)
+			//console.log('this.scroll',this.scroll)
+			if(this.probeType==2 || this.probeType==3){
+				this.scroll.on('scroll',this.Onscroll)
+			}
+			if(this.pullUpLoad){
+				this.scroll.on('pullingUp',()=>{
+					setTimeout(()=>{
+						this.$emit('pullMore')
+						console.log("上拉加载完成!")
+					},1000)
+				})
+			}
 		},
 		methods:{
 			Onscroll(pos){
 				//console.log(pos)
-				this.$emit('scrollPos',pos)
+				this.scroll && this.$emit('scrollPos',pos)
 			},
-			backTop(time=300){
-				this.scroll.scrollTo(0,0,time)
+			backTop(x=0,y=0,time=300){
+				console.log("yyyy",y)
+				this.scroll && this.scroll.scrollTo(x,y,time)
 			},
 			finishPull(){
-				this.scroll.finishPullUp()
+				this.scroll && this.scroll.finishPullUp()
+			},
+			refresh(){
+				console.log('this.scroll && this.scroll.refresh()',this.$route.path)
+				this.scroll && this.scroll.refresh()
+			},
+			getScrollY(){
+				return this.scroll.scroll.y 
 			}
 		}
 	}

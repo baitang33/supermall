@@ -1,6 +1,6 @@
 <template>
-	<div class="goods-item">
-		<img :src="goodsItem.image"/>
+	<div class="goods-item" @click="itemClick(goodsItem.id)">
+		<img :src="goodsItem.image" @load="imageLoad"/>
 		<div class="goods-item-main">
 			<p class="goods-item-content">{{goodsItem.name}}</p>
 			<div class="goods-item-p-btn left">售价</div><div class='left'>&yen;{{goodsItem.price}}</div>
@@ -18,6 +18,25 @@
 				default(){
 					return {}
 				}
+			}
+		},
+		methods:{
+			imageLoad(){
+				this.$bus.$emit('imageGoodsItem')
+//				if(this.$route.path.includes('/home')){
+//					this.$bus.$emit('imageGoodsItem')
+//				}else{
+//					this.$bus.$emit('detailImage')
+//				}
+			},
+			itemClick(id){
+				console.log('itemClick')
+				this.$router.push({
+					path:'/detail',
+					query:{
+						id
+					}
+				})
 			}
 		}
 	}

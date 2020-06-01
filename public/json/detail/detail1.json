@@ -1,0 +1,19 @@
+{
+	"data":{
+		"context":{"currentTime":1590916172},
+		"isEnd":false,
+		"list":[
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1kzr8.133798.0.bbTeVs0yu7Uo7.pos_0-m_489702-sd_119","_material_start_time":1547803518,"url":"https://market.mogu.com","_system_record_entry_id":"489702"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l066.133798.0.bbTeVs0yu7Uo8.pos_1-m_489971-sd_119","_material_start_time":1548039889,"url":"https://act.mogu.com/pcindex","_system_record_entry_id":"489971"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l1a0.133798.0.bbTeVs0yu7Uo9.pos_2-m_490688-sd_119","_material_start_time":1548667149,"url":"https://list.mogu.com","_system_record_entry_id":"490688"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l5di.133798.0.bbTeVs0yu7Uoa.pos_3-m_493343-sd_119","_material_start_time":1550722223,"url":"https://www.mogu.com","_system_record_entry_id":"493343"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l5ee.133798.0.bbTeVs0yu7Uob.pos_4-m_493359-sd_119","_material_start_time":1550730135,"url":"https://pc.mogu.com/content/personal","_system_record_entry_id":"493359"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l5eg.133798.0.bbTeVs0yu7Uoc.pos_5-m_493360-sd_119","_material_start_time":1550730173,"url":"https://pc.mogu.com/content/detail","_system_record_entry_id":"493360"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l5ei.133798.0.bbTeVs0yu7Uod.pos_6-m_493361-sd_119","_material_start_time":1550730225,"url":"https://pc.mogu.com/content/topic","_system_record_entry_id":"493361"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l5ek.133798.0.bbTeVs0yu7Uoe.pos_7-m_493362-sd_119","_material_start_time":1550730334,"url":"https://pc.mogu.com/content/brand","_system_record_entry_id":"493362"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1l5em.133798.0.bbTeVs0yu7Uof.pos_8-m_493363-sd_119","_material_start_time":1550731021,"url":"https://pc.mogu.com/content/collection","_system_record_entry_id":"493363"},
+			{"_material_end_time":2147483647,"acm":"3.mce.1_10_1le06.133798.0.bbTeVs0yu7Uog.pos_9-m_498935-sd_119","_material_start_time":1553224485,"url":"https://wall.mogu.com/mgj-pagani-wall-vue","_system_record_entry_id":"498935"}
+			],"nextPage":2},
+			"returnCode":"SUCCESS",
+			"success":true
+		}
